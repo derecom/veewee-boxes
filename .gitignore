@@ -1,5 +1,7 @@
 .bundle
-vendor/*
+vendor
+iso
 *.swp
 *.swo
+*.box
 .DS_Store
