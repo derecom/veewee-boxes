@@ -1,8 +1,6 @@
 # Add default user to the group allowed to sudo
 usermod -a -G sudo ops
-#cp /etc/sudoers /etc/sudoers.orig
-#sed -i -e '/Defaults\s\+env_reset/a Defaults\texempt_group=admin' /etc/sudoers
-#sed -i -e 's/%admin ALL=(ALL) ALL/%admin ALL=NOPASSWD:ALL/g' /etc/sudoers
+sed -i -e 's/%sudo\t.\+$/%sudo ALL=NOPASSWD:ALL/g' /etc/sudoers
 
 # Installing derecom default key
 mkdir /home/ops/.ssh
