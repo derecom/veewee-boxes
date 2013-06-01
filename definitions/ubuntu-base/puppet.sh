@@ -10,4 +10,4 @@ wget -O puppetlabs-release.deb http://apt.puppetlabs.com/puppetlabs-release-quan
 dpkg -i puppetlabs-release.deb
 rm puppetlabs-release.deb
 apt-get -y update
-apt-get -y install puppetmaster puppet facter
+apt-get -y install puppet facter
